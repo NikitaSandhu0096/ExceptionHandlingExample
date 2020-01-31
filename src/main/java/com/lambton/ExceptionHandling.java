@@ -7,6 +7,8 @@ public class ExceptionHandling {
         int n = 20;
         int a[] = new int[]{1,2,3};
 
+        Person p = new Person();
+
         String s = null;
 
         try {
@@ -16,6 +18,9 @@ public class ExceptionHandling {
          //   System.out.println("Array value : "+a[3]); //this will throw ArrayIndexOutOfBound exception
 
             System.out.println("Length os string : "+s.length());
+
+            p.setName("Thank You");
+            p.setSalary(500);
         }
         catch (ArithmeticException e){
           //  System.out.println(e);
